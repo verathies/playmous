@@ -145,6 +145,7 @@ main img {
   border-radius: 8%;
 }
 
+
 .sixth-width {
   width: 40%;
   display: flex;
@@ -269,6 +270,12 @@ footer {
   /* Style adjustments for high resolution devices */
 }
 
+/* Author custom media query for mobile screens: max width 768 px*/
+@media only screen and (max-width: 767px) {
+  .mobile-hidden{
+    display: none;
+  }
+}
 /**************************************************************************************************************************
                 AUTHOR CUSTOM MEDIA QUERY  TABLET 
 **************************************************************************************************************************/
@@ -277,7 +284,7 @@ footer {
 
 /* font styles*/
 h1 {
-  font-size:1.5em;
+  font-size:1.1875em;
 }
 a{
   font-size: 1em;
@@ -285,18 +292,25 @@ a{
 /*******************************************************    HEADER- TABLET    ********************************************************************************/
 
 header {
-  margin: 30px 35px 40px 40px;
+  margin: 30px 85px;
 }
 header figure img {
-  width: 15%;
+  width: 12%;
 }
 
 /*******************************************************    MAIN- TABLET    ********************************************************************************/
 
-main img {
-  padding-bottom: 7px;
+.sixth-width {
+  width: 18%;
+  padding: 0 20px 50px 10px;
 }
-
+main figure img {
+  padding-bottom: 10px;
+}
+/*******************************************************    FOOTER- MOBILE    ********************************************************************************/
+.third-width{
+  width: 25%;
+}
 } /* end of media query tablet*/
 /* ==========================================================================
    Print styles.
