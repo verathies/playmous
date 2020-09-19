@@ -120,21 +120,6 @@ img {
 	justify-content: center;
   flex-flow: row wrap;
 }
-
-.third-width{ 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: row wrap; 
-  width: 33%;
-}
-.sixth-width {
-  width: 40%;
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  padding: 0 5px 20px 5px;
-}
 /* font styles*/
 
 h1{
@@ -145,9 +130,10 @@ a {
   text-decoration: none;	
   font-size: 0.875em; 
 }
+
 /*******************************************************    HEADER- MOBILE    ********************************************************************************/
 header {
-  margin: 10px 0;
+  margin: 10px 20px;
 }
 header figure img {
   width: 20%;
@@ -159,16 +145,30 @@ main img {
   border-radius: 8%;
 }
 
+.sixth-width {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding: 0 5px 20px 5px;
+}
 /*******************************************************    FOOTER- MOBILE    ********************************************************************************/
 
 footer {
-  padding: 30px 0 20px 0;
+  padding: 30px 0 20px 5px;
 }
+
+.third-width{ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap; 
+  width: 33%;
+}
+
 #copyright {
   font-size: 0.75em;
 }
-
-
 
 /* ==========================================================================
    Helper classes
@@ -269,6 +269,35 @@ footer {
   /* Style adjustments for high resolution devices */
 }
 
+/**************************************************************************************************************************
+                AUTHOR CUSTOM MEDIA QUERY  TABLET 
+**************************************************************************************************************************/
+
+@media only screen and (min-width: 768px) {
+
+/* font styles*/
+h1 {
+  font-size:1.5em;
+}
+a{
+  font-size: 1em;
+}
+/*******************************************************    HEADER- TABLET    ********************************************************************************/
+
+header {
+  margin: 30px 35px 40px 40px;
+}
+header figure img {
+  width: 15%;
+}
+
+/*******************************************************    MAIN- TABLET    ********************************************************************************/
+
+main img {
+  padding-bottom: 7px;
+}
+
+} /* end of media query tablet*/
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
