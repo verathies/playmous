@@ -372,12 +372,14 @@ main figure img {
     margin: 30px 150px;
   }
   /*******************************************************    MAIN- DESKTOP   ********************************************************************************/
+
   .sixth-width{
     width:22%;
   }
 
   main img {
     padding-bottom: 10px;
+    max-width: 490px;
   }
   main figure img {
     padding-bottom: 20px;
